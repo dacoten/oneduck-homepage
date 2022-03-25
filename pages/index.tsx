@@ -78,9 +78,9 @@ const Home: NextPage = () => {
                     </Heading>
                     <Paragraph>
                         I am a full-stack developer. I have experience with all stages of the
-                        development cycle for dynamic web projects with small and medium-sized
-                        companies. I always try to find the cutting-edge technologies and challenge
-                        myself to implement an application that utilizing that technologies.
+                        development cycle for dynamic web projects with small and medium-sized companies.
+                        I always try to find cutting-edge technologies and challenge myself to implement
+                        an application that utilizes those technologies.
                     </Paragraph>
                     <Box textAlign="center" my={4}>
                         <NextLink href="/works" scroll={false}>
