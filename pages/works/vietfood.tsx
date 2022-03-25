@@ -16,7 +16,7 @@ export default function VietFood() {
                 </WorkTitle>
 
                 <WorkParagraph>
-                    A store website with over 300 online invoices per month.
+                    Shop for Vietnamese Community in Japan. A store website with over 300 online invoices per month.
                 </WorkParagraph>
 
                 <List ml={4} my={4}>

@@ -34,7 +34,7 @@ export default function Market() {
                     <ListItem>
                         <WorkMetadata>Stack</WorkMetadata>
                         <Text as="span">
-                            React, Typescript, Web3.js, Chakra UI, Nest.js, AWS, Vercel
+                            React, Typescript, Web3.js, Chakra UI, Nest.js, AWS (ALB, EC2, CloudFront, RDS, S3, Route 53, ACM, SQS, Cognito, Code Pipeline, Code Build ...), Vercel
                         </Text>
                     </ListItem>
                     <ListItem>
