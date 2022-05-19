@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
+import { SiLeetcode } from 'react-icons/si'
 import { FaGlobeAmericas } from 'react-icons/fa'
 import MainArticle from '@/layouts/MainArticle'
 import SectionDiv from '@/components/SectionDiv'
@@ -78,9 +79,9 @@ const Home: NextPage = () => {
                     </Heading>
                     <Paragraph>
                         I am a full-stack developer. I have experience with all stages of the
-                        development cycle for dynamic web projects with small and medium-sized companies.
-                        I always try to find cutting-edge technologies and challenge myself to implement
-                        an application that utilizes those technologies.
+                        development cycle for dynamic web projects with small and medium-sized
+                        companies. I always try to find cutting-edge technologies and challenge
+                        myself to implement an application that utilizes those technologies.
                     </Paragraph>
                     <Box textAlign="center" my={4}>
                         <NextLink href="/works" scroll={false}>
@@ -130,6 +131,17 @@ const Home: NextPage = () => {
                                     leftIcon={<IoLogoGithub />}
                                 >
                                     @dacoten
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://leetcode.com/user3192Vz/" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="rgb(255, 171, 0)"
+                                    leftIcon={<SiLeetcode />}
+                                >
+                                    @oneduck (Leetcode)
                                 </Button>
                             </Link>
                         </ListItem>

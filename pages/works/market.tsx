@@ -23,7 +23,7 @@ export default function Market() {
                 <List ml={4} my={4}>
                     <ListItem>
                         <WorkMetadata>Website</WorkMetadata>
-                        <Link href="https://marketplace.kingspeed.io/" isExternal>
+                        <Link href="https://testnet-marketplace.kingspeed.io/" isExternal>
                             https://marketplace.kingspeed.io <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
@@ -34,7 +34,9 @@ export default function Market() {
                     <ListItem>
                         <WorkMetadata>Stack</WorkMetadata>
                         <Text as="span">
-                            React, Typescript, Web3.js, Chakra UI, Nest.js, AWS (ALB, EC2, CloudFront, RDS, S3, Route 53, ACM, SQS, Cognito, Code Pipeline, Code Build ...), Vercel
+                            React, Typescript, Web3.js, Chakra UI, Nest.js, AWS (ALB, EC2,
+                            CloudFront, RDS, S3, Route 53, ACM, SQS, Cognito, Code Pipeline, Code
+                            Build ...), Vercel
                         </Text>
                     </ListItem>
                     <ListItem>

@@ -16,7 +16,7 @@ export default function Staking() {
                 </WorkTitle>
 
                 <WorkParagraph>
-                    2,404,171.5361 staked KSC and increasing. 16 available options to boost your
+                    3,401,206.9768 staked KSC and increasing. 16 available options to boost your
                     earning and chance to receive extra items
                 </WorkParagraph>
 
