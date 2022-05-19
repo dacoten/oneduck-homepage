@@ -158,6 +158,22 @@ const Home: NextPage = () => {
                         </ListItem>
                     </List>
                 </SectionDiv>
+                <SectionDiv delay={0.3}>
+                    <Heading as="h3" variant="section-title">
+                        Certificates
+                    </Heading>
+                    <Box mt="20px">
+                        <List>
+                            <ListItem>
+                                <Image
+                                    src="/images/certificates/hacker_rank_react.png"
+                                    width="150px"
+                                    height="150px"
+                                />
+                            </ListItem>
+                        </List>
+                    </Box>
+                </SectionDiv>
             </Container>
         </MainArticle>
     )
