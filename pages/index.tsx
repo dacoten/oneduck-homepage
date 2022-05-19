@@ -166,7 +166,7 @@ const Home: NextPage = () => {
                         <List>
                             <ListItem>
                                 <Image
-                                    src="/images/certificates/hacker_rank_react.png"
+                                    src="/images/certificates/hacker_rank_react.webp"
                                     width="150px"
                                     height="150px"
                                 />
