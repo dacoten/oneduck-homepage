@@ -11,6 +11,7 @@ import {
     ListItem,
     useColorModeValue,
     chakra,
+    HStack,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
@@ -163,15 +164,22 @@ const Home: NextPage = () => {
                         Certificates
                     </Heading>
                     <Box mt="20px">
-                        <List>
-                            <ListItem>
+                        <HStack spacing="20px">
+                            <Box>
                                 <Image
                                     src="/images/certificates/hacker_rank_react.webp"
                                     width="150px"
                                     height="150px"
                                 />
-                            </ListItem>
-                        </List>
+                            </Box>
+                            <Box>
+                                <Image
+                                    src="/images/certificates/binary_search_1.png"
+                                    width="180px"
+                                    height="150px"
+                                />
+                            </Box>
+                        </HStack>
                     </Box>
                 </SectionDiv>
             </Container>
