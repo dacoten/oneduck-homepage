@@ -136,7 +136,7 @@ const Home: NextPage = () => {
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="https://leetcode.com/user3192Vz/" target="_blank">
+                            <Link href="https://leetcode.com/oneduck/" target="_blank">
                                 <Button
                                     variant="ghost"
                                     colorScheme="rgb(255, 171, 0)"
