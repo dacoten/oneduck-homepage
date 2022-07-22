@@ -9,7 +9,7 @@ import WorkImage from '@/components/works/WorkImage'
 
 export default function TryToeic() {
     return (
-        <MainArticle title="Market NFT">
+        <MainArticle title="Try Toeic">
             <Container>
                 <WorkTitle>
                     Online Toeic Exam <Badge>2020-2021</Badge>
@@ -23,8 +23,12 @@ export default function TryToeic() {
                 <List ml={4} my={4}>
                     <ListItem>
                         <WorkMetadata>Website</WorkMetadata>
-                        <Link href="https://try-toeic.vercel.app/" isExternal>
-                            https://try-toeic.vercel.app/ <ExternalLinkIcon mx="2px" />
+                        <Link
+                            href="http://try-toeic.s3-website-ap-southeast-1.amazonaws.com/"
+                            isExternal
+                        >
+                            http://try-toeic.s3-website-ap-southeast-1.amazonaws.com/{' '}
+                            <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>

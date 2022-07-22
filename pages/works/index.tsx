@@ -15,6 +15,29 @@ export default function Work() {
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <SectionDiv>
                         <WorkGridItem
+                            id="nftciti"
+                            title="NFT Citi"
+                            thumbnail="/images/works/nft_citi.webp"
+                        >
+                            A website that provides web3 marketplace for NFTs and crypto
+                            collectibles. Browse, create, buy, sell, and auction NFTs using NFTCiti
+                            today
+                        </WorkGridItem>
+                    </SectionDiv>
+
+                    <SectionDiv>
+                        <WorkGridItem
+                            id="market247"
+                            title="Market247 News"
+                            thumbnail="/images/works/market247_img_01.avif"
+                        >
+                            Crypto Insight. All questions about NFT, Play-to-earn, Web3, DeFi, and
+                            Metaverse will be addressed in this section
+                        </WorkGridItem>
+                    </SectionDiv>
+
+                    <SectionDiv>
+                        <WorkGridItem
                             id="market"
                             title="Market NFT"
                             thumbnail="/images/works/marketplace.png"

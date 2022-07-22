@@ -23,7 +23,7 @@ export default function Market() {
                 <List ml={4} my={4}>
                     <ListItem>
                         <WorkMetadata>Website</WorkMetadata>
-                        <Link href="https://testnet-marketplace.kingspeed.io/" isExternal>
+                        <Link href="https://marketplace.kingspeed.io/" isExternal>
                             https://marketplace.kingspeed.io <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>

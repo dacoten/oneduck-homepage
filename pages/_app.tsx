@@ -13,6 +13,7 @@ if (typeof window !== 'undefined') {
 }
 
 function MyApp({ Component, pageProps, router }: AppProps) {
+    console.log('pageProps.cookies', pageProps.cookies)
     return (
         <ChakraProvider theme={theme}>
             <Charka cookies={pageProps.cookies}>
