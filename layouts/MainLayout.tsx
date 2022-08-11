@@ -26,7 +26,7 @@ export default function MainLayout({ children, router }: MainLayoutProps) {
                 <meta name="author" content="Nguyen Ngoc Tan" />
                 <meta name="author" content="oneduck" />
                 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-                <link rel="shortcut icon" href="/oneDuck.png" type="image/x-icon" />
+                <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@oneduck" />
                 <meta name="twitter:creator" content="@oneduck" />

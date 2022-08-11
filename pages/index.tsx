@@ -21,6 +21,7 @@ import MainArticle from '@/layouts/MainArticle'
 import SectionDiv from '@/components/SectionDiv'
 import { BioSection, BioYear } from '@/components/Biography'
 import styled from '@emotion/styled'
+import WorkImage from '@/components/works/WorkImage'
 
 const ProfileImage = chakra(Image, {
     shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -159,6 +160,16 @@ const Home: NextPage = () => {
                         </ListItem>
                     </List>
                 </SectionDiv>
+
+                <SectionDiv delay={0.3}>
+                    <Heading as="h3" variant="section-title">
+                        Oneduck.me
+                    </Heading>
+                    <Box mt="20px">
+                        <WorkImage src="/oneduck_performance.png" alt="one duck" />
+                    </Box>
+                </SectionDiv>
+
                 <SectionDiv delay={0.3}>
                     <Heading as="h3" variant="section-title">
                         Certificates
