@@ -47,10 +47,26 @@ export default function TryToeic() {
                     </ListItem>
                 </List>
 
-                <WorkImage src="/images/works/try_toeic_img_01.png" alt="try toeic 01" />
-                <WorkImage src="/images/works/try_toeic_img_02.png" alt="try toeic 02" />
-                <WorkImage src="/images/works/try_toeic_img_03.png" alt="try toeic 03" />
-                <WorkImage src="/images/works/try_toeic_img_04.png" alt="try toeic 04" />
+                <WorkImage
+                    src="/images/works/try_toeic_img_01.png"
+                    height="320px"
+                    alt="try toeic 01"
+                />
+                <WorkImage
+                    src="/images/works/try_toeic_img_02.png"
+                    height="270px"
+                    alt="try toeic 02"
+                />
+                <WorkImage
+                    src="/images/works/try_toeic_img_03.png"
+                    height="260px"
+                    alt="try toeic 03"
+                />
+                <WorkImage
+                    src="/images/works/try_toeic_img_04.png"
+                    height="270px"
+                    alt="try toeic 04"
+                />
             </Container>
         </MainArticle>
     )

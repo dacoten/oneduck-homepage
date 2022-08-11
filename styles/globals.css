@@ -13,6 +13,10 @@ a {
     box-sizing: border-box;
 }
 
+:root {
+    --color-title: #ffab00;
+}
+
 .input-search-wallet {
     padding-inline-end: 60px !important;
 }

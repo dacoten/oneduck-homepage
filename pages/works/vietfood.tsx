@@ -40,8 +40,16 @@ export default function VietFood() {
                     </ListItem>
                 </List>
 
-                <WorkImage src="/images/works/vietfood_img_01.png" alt="vietfood 01" />
-                <WorkImage src="/images/works/vietfood_img_02.png" alt="vietfood 02" />
+                <WorkImage
+                    src="/images/works/vietfood_img_01.png"
+                    height="350px"
+                    alt="vietfood 01"
+                />
+                <WorkImage
+                    src="/images/works/vietfood_img_02.png"
+                    height="350px"
+                    alt="vietfood 02"
+                />
             </Container>
         </MainArticle>
     )

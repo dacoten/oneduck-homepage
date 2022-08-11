@@ -49,8 +49,8 @@ export default function Staking() {
                     </ListItem>
                 </List>
 
-                <WorkImage src="/images/works/staking_img_01.png" alt="Staking 01" />
-                <WorkImage src="/images/works/staking_img_02.png" alt="Staking 02" />
+                <WorkImage src="/images/works/staking_img_01.png" height="290px" alt="Staking 01" />
+                <WorkImage src="/images/works/staking_img_02.png" height="250px" alt="Staking 02" />
             </Container>
         </MainArticle>
     )

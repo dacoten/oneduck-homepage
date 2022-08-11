@@ -41,12 +41,21 @@ export default function NFTCiti() {
 
                 <WorkImage
                     src="/images/works/nft_citi_performance.jpg"
+                    height="240px"
                     alt="nft citi performance"
                 />
-                <WorkImage src="/images/works/nft_citi_img_01.png" alt="nft citi 01" />
-                <SimpleGrid columns={2} spacing={2}>
-                    <WorkImage src="/images/works/nft_citi.webp" alt="nft citi 02" />
-                    <WorkImage src="/images/works/nft_citi_img_02.webp" alt="nft citi 03" />
+                <WorkImage
+                    src="/images/works/nft_citi_img_01.png"
+                    height="240px"
+                    alt="nft citi 01"
+                />
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={2}>
+                    <WorkImage src="/images/works/nft_citi.webp" height="190px" alt="nft citi 02" />
+                    <WorkImage
+                        src="/images/works/nft_citi_img_02.webp"
+                        height="190px"
+                        alt="nft citi 03"
+                    />
                 </SimpleGrid>
             </Container>
         </MainArticle>

@@ -39,8 +39,12 @@ export default function Market247() {
                     </ListItem>
                 </List>
 
-                <WorkImage src="/images/works/market247_img_01.avif" alt="Staking 01" />
-                <WorkImage src="/images/works/market247_img_02.jpg" alt="Staking 02" />
+                <WorkImage
+                    src="/images/works/market247_performance.png"
+                    alt="performance market247"
+                />
+                <WorkImage src="/images/works/market247_img_01.avif" alt="market247 01" />
+                <WorkImage src="/images/works/market247_img_02.jpg" alt="market247 02" />
             </Container>
         </MainArticle>
     )
