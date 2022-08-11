@@ -34,11 +34,15 @@ export default function NFTCiti() {
                     <ListItem>
                         <WorkMetadata>Stack</WorkMetadata>
                         <Text as="span">
-                            Next.js, Typescript, Tailwind CSS, React Query, GraphQL, Nest.js, AWS
+                            Next.js, React Query, GraphQL, Typescript, Tailwind CSS, Nest.js, AWS
                         </Text>
                     </ListItem>
                 </List>
 
+                <WorkImage
+                    src="/images/works/nft_citi_performance.jpg"
+                    alt="nft citi performance"
+                />
                 <WorkImage src="/images/works/nft_citi_img_01.png" alt="nft citi 01" />
                 <SimpleGrid columns={2} spacing={2}>
                     <WorkImage src="/images/works/nft_citi.webp" alt="nft citi 02" />

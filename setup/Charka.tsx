@@ -20,7 +20,6 @@ export default function Charka({ cookies, children }: CharkaProps) {
 }
 
 export async function getServerSideProps({ request }: any) {
-    console.log('repuest', request)
     return {
         props: {
             cookies: request?.headers.cookie ?? '',

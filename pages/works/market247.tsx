@@ -34,7 +34,7 @@ export default function Market247() {
                     <ListItem>
                         <WorkMetadata>Stack</WorkMetadata>
                         <Text as="span">
-                            Next.js, Typescript, Chakra UI, Strapi CMS, AWS, Vercel
+                            Next.js, Vercel SWR, Typescript, Chakra UI, Strapi CMS, AWS, Vercel
                         </Text>
                     </ListItem>
                 </List>

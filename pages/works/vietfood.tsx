@@ -23,7 +23,10 @@ export default function VietFood() {
                 <List ml={4} my={4}>
                     <ListItem>
                         <WorkMetadata>Website</WorkMetadata>
-                        <Link href="http://viet-food.com/" isExternal>
+                        <Link
+                            href="http://viet-food.com.s3-website-ap-northeast-1.amazonaws.com/"
+                            isExternal
+                        >
                             http://viet-food.com/ <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
