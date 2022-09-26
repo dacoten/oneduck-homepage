@@ -9,10 +9,20 @@ export default function Work() {
         <MainArticle title="Works">
             <Container>
                 <Heading as="h3" fontSize={20} mb={4}>
-                    Works
+                    Cutting-edge technology
                 </Heading>
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                    <SectionDiv>
+                        <WorkGridItem
+                            id="movie"
+                            title="Movies"
+                            thumbnail="/images/works/movie_img.webp"
+                        >
+                            Movies - Watch TV Shows Online, Watch Movies Online
+                        </WorkGridItem>
+                    </SectionDiv>
+
                     <SectionDiv>
                         <WorkGridItem
                             id="nftciti"
@@ -35,7 +45,13 @@ export default function Work() {
                             Metaverse will be addressed in this section
                         </WorkGridItem>
                     </SectionDiv>
+                </SimpleGrid>
 
+                <Heading as="h3" fontSize={20} mb={4}>
+                    Works
+                </Heading>
+
+                <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <SectionDiv>
                         <WorkGridItem
                             id="market"
