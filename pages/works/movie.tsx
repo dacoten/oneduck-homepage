@@ -38,6 +38,7 @@ export default function Movie() {
                     </ListItem>
                 </List>
 
+                <WorkImage src="/images/works/movie_performance.png" alt="movie performance" />
                 <WorkImage src="/images/works/movie_img.webp" alt="movie 01" />
                 <WorkImage src="/images/works/movie_img_01.webp" alt="movie 02" />
             </Container>
