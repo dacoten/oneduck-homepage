@@ -27,7 +27,7 @@ export default function Work() {
                         <WorkGridItem
                             id="nftciti"
                             title="NFT Citi"
-                            thumbnail="/images/works/nft_citi.webp"
+                            thumbnail="/images/works/nft_citi.png"
                         >
                             A website that provides web3 marketplace for NFTs and crypto
                             collectibles. Browse, create, buy, sell, and auction NFTs using NFTCiti
