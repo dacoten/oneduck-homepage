@@ -25,8 +25,8 @@ export default function Work() {
 
                     <SectionDiv>
                         <WorkGridItem
-                            id="nftciti"
-                            title="NFT Citi"
+                            id="makecolor"
+                            title="Make Color"
                             thumbnail="/images/works/nft_citi.webp"
                         >
                             A website that provides web3 marketplace for NFTs and crypto

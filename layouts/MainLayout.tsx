@@ -6,7 +6,7 @@ import { Box, Container } from '@chakra-ui/react'
 import NavBar from '@/layouts/NavBar'
 import Footer from '@/layouts/Footer'
 import OneDuckLoader from '@/components/OneDuckLoader'
-
+import { Analytics } from '@vercel/analytics/react'
 interface MainLayoutProps {
     children: JSX.Element[] | JSX.Element
     router: Router
@@ -42,6 +42,7 @@ export default function MainLayout({ children, router }: MainLayoutProps) {
 
                 {children}
 
+                <Analytics />
                 <Footer />
             </Container>
         </Box>

@@ -9,22 +9,22 @@ import WorkImage from '@/components/works/WorkImage'
 
 export default function NFTCiti() {
     return (
-        <MainArticle title="NFT Citi">
+        <MainArticle title="Make Color">
             <Container>
                 <WorkTitle>
-                    NFTCiti <Badge>07/2022-</Badge>
+                    MakeColor <Badge>07/2022-</Badge>
                 </WorkTitle>
 
                 <WorkParagraph>
                     A website that provides web3 marketplace for NFTs and crypto collectibles.
-                    Browse, create, buy, sell, and auction NFTs using NFTCiti today
+                    Browse, create, buy, sell, and auction NFTs using MakeColor today
                 </WorkParagraph>
 
                 <List ml={4} my={4}>
                     <ListItem>
                         <WorkMetadata>Website</WorkMetadata>
-                        <Link href="http://3.136.71.236/" isExternal>
-                            http://3.136.71.236/ <ExternalLinkIcon mx="2px" />
+                        <Link href="https://makecolor.io" isExternal>
+                            https://makecolor.io <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>

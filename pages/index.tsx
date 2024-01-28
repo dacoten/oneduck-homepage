@@ -16,7 +16,7 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 import { SiLeetcode } from 'react-icons/si'
-import { FaGlobeAmericas } from 'react-icons/fa'
+import { FaGlobeAmericas, FaLinkedin } from 'react-icons/fa'
 import MainArticle from '@/layouts/MainArticle'
 import SectionDiv from '@/components/SectionDiv'
 import { BioSection, BioYear } from '@/components/Biography'
@@ -111,13 +111,19 @@ const Home: NextPage = () => {
                         <BioYear>2019 to present</BioYear>
                         Worked at Japan
                     </BioSection>
+                    <BioSection>
+                        <BioYear>2022 to present</BioYear>
+                        Working at Rakuten
+                    </BioSection>
                 </SectionDiv>
 
                 <SectionDiv delay={0.3}>
                     <Heading as="h3" variant="section-title">
                         I ♥
                     </Heading>
-                    <Paragraph>Clean Coding, DevOps, Learn cutting-edge technologies</Paragraph>
+                    <Paragraph>
+                        Fast Website, Clean Coding, DevOps, Learn cutting-edge technologies
+                    </Paragraph>
                 </SectionDiv>
 
                 <SectionDiv delay={0.3}>
@@ -155,6 +161,20 @@ const Home: NextPage = () => {
                                     leftIcon={<FaGlobeAmericas />}
                                 >
                                     @oneduck
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link
+                                href="https://www.linkedin.com/in/nguyen-ngoc-tan-9109b9162/"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="rgb(255, 171, 0)"
+                                    leftIcon={<FaLinkedin />}
+                                >
+                                    @nguyenngoctan
                                 </Button>
                             </Link>
                         </ListItem>
