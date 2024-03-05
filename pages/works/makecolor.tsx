@@ -44,6 +44,9 @@ export default function NFTCiti() {
                     height="240px"
                     alt="nft citi performance"
                 />
+
+                <WorkImage src="/images/works/nft_citi.png" height="240px" alt="nft citi 01" />
+
                 <WorkImage
                     src="/images/works/nft_citi_img_01.png"
                     height="240px"
