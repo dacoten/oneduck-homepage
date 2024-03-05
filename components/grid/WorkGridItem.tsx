@@ -1,7 +1,7 @@
 import React from 'react'
 import NextLink from 'next/link'
 import { Global } from '@emotion/react'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { Box, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 
 interface WorkGridItemProps {
@@ -21,21 +21,15 @@ export const GriGridItemStyle = () => (
     />
 )
 
-const WorkGridItem = ({ children, id, title, thumbnail }: WorkGridItemProps) => {
+const WorkGridItem = ({ children, id, title = '', thumbnail }: WorkGridItemProps) => {
     return (
         <Box w="100%" textAlign="center">
             <NextLink href={`/works/${id}`} scroll={false}>
-                <LinkBox cursor="pointer">
+                <Box cursor="pointer">
                     <Box pos="relative" height="130px" width="100%" overflow="hidden">
-                        <Image
-                            src={thumbnail}
-                            alt={title}
-                            layout="fill"
-                            objectFit="cover"
-                            className="grid-item-thumbnail"
-                        />
+                        <Image src={thumbnail} alt={title} fill className="grid-item-thumbnail" />
                     </Box>
-                    <LinkOverlay href={`/works/${id}`}>
+                    <Box>
                         <Text
                             mt={2}
                             fontSize={20}
@@ -44,9 +38,9 @@ const WorkGridItem = ({ children, id, title, thumbnail }: WorkGridItemProps) => 
                         >
                             {title}
                         </Text>
-                    </LinkOverlay>
+                    </Box>
                     <Text fontSize={14}>{children}</Text>
-                </LinkBox>
+                </Box>
             </NextLink>
         </Box>
     )

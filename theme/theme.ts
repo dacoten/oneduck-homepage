@@ -1,6 +1,6 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
-import { HtmlProps } from 'next/dist/shared/lib/utils'
+import { HtmlProps } from 'next/dist/shared/lib/html-context.shared-runtime'
 
 const styles = {
     global: (props: HtmlProps) => ({

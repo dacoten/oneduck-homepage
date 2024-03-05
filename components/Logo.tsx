@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { Box, Text, useColorModeValue } from '@chakra-ui/react'
+import { Text, useColorModeValue } from '@chakra-ui/react'
 import { SiDuckduckgo } from 'react-icons/si'
 import styled from '@emotion/styled'
 
@@ -24,14 +24,12 @@ const LogoBox = styled.span`
 export default function Logo() {
     return (
         <Link href="/" scroll={false}>
-            <Box as="a">
-                <LogoBox>
-                    <SiDuckduckgo className="icon-duck" />
-                    <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} ml={1}>
-                        Nguyen Ngoc Tan
-                    </Text>
-                </LogoBox>
-            </Box>
+            <LogoBox>
+                <SiDuckduckgo className="icon-duck" />
+                <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} ml={1}>
+                    Nguyen Ngoc Tan
+                </Text>
+            </LogoBox>
         </Link>
     )
 }

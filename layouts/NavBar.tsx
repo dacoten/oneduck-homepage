@@ -13,6 +13,7 @@ import {
     MenuButton,
     IconButton,
     useColorModeValue,
+    HStack,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
@@ -23,24 +24,23 @@ interface LinkItemProps {
     href: string
     path: string
     _target?: string
-    children: any
+    children: React.ReactNode
 }
 
-const LinkItem = ({ href, path, _target, children, ...props }: any) => {
+const LinkItem = ({ href, path, _target, children, ...props }: LinkItemProps) => {
     const active = path === href
 
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
-        <NextLink href={href} passHref scroll={false}>
-            <Link
+        <NextLink href={href} scroll={false}>
+            <Box
                 p={2}
                 bg={active ? 'grassTeal' : undefined}
                 color={active ? '#202023' : inactiveColor}
-                _target={_target}
                 {...props}
             >
                 {children}
-            </Link>
+            </Box>
         </NextLink>
     )
 }
@@ -79,21 +79,16 @@ const NavBar = ({ ...props }) => {
                     alignItems="center"
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
+                    gap={2}
                 >
                     <LinkItem href="/works" path={path}>
                         Works
                     </LinkItem>
-                    <LinkItem
-                        _target="_blank"
-                        href="https://github.com/dacoten"
-                        path={path}
-                        display="inline-flex"
-                        alignItems="center"
-                        style={{ gap: 4 }}
-                        pl={2}
-                    >
-                        <IoLogoGithub />
-                        Source
+                    <LinkItem _target="_blank" href="https://github.com/dacoten" path={path}>
+                        <HStack alignItems="center" gap={1}>
+                            <IoLogoGithub />
+                            <Box>Source</Box>
+                        </HStack>
                     </LinkItem>
                 </Stack>
 
@@ -109,10 +104,10 @@ const NavBar = ({ ...props }) => {
                                 aria-label="Options"
                             />
                             <MenuList>
-                                <NextLink href="/" passHref>
+                                <NextLink href="/">
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
-                                <NextLink href="/works" passHref>
+                                <NextLink href="/works">
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
                                 <MenuItem as={Link} href="https://github.com/dacoten">

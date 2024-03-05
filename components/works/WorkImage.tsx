@@ -12,7 +12,7 @@ interface WorkImageProps {
 const WorkImage = ({ src, alt, height = '300px', width = '100%' }: WorkImageProps) => {
     return (
         <Box pos="relative" borderRadius="lg" w={width} height={height} overflow="hidden" mb={4}>
-            <Image layout="fill" src={src} alt={alt} objectFit="cover" />
+            <Image fill src={src} alt={alt} />
         </Box>
     )
 }
