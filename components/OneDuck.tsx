@@ -1,15 +1,15 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, memo } from 'react'
 import * as THREE from 'three'
 import { OrthographicCamera, WebGLRenderer } from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '@/theme/model'
-import { OneDuckSpinner, OneDuckContainer } from '@/components/OneDuckLoader'
+import { OneDuckContainer } from './OneDuckContainer'
 
 const easeOutCirc = (frame: number): number => {
     return Math.sqrt(1 - Math.pow(frame - 1, 4))
 }
 
-const OneDuck = () => {
+export const OneDuck = memo(function OneDuck() {
     const refContainer = useRef<any>()
     const [loading, setLoading] = useState<boolean>(true)
     const [renderer, setRenderer] = useState<WebGLRenderer>()
@@ -31,7 +31,6 @@ const OneDuck = () => {
         }
     }, [renderer])
 
-    /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
         const { current: container } = refContainer
         if (container && !renderer) {
@@ -44,7 +43,6 @@ const OneDuck = () => {
             })
             renderer.setPixelRatio(window.devicePixelRatio)
             renderer.setSize(scW, scH)
-            renderer.outputEncoding = THREE.sRGBEncoding
             container.appendChild(renderer.domElement)
             setRenderer(renderer)
 
@@ -97,9 +95,14 @@ const OneDuck = () => {
             return () => {
                 cancelAnimationFrame(req)
                 renderer.dispose()
+
+                // TO DO: remove duplicate canvas :(
+                if (container && container.children[1]) {
+                    container.removeChild(container.children[1])
+                }
             }
         }
-    }, [])
+    }, [initialCameraPosition, loading, renderer, scene, target])
 
     useEffect(() => {
         window.addEventListener('resize', handleWindowResize, false)
@@ -108,7 +111,5 @@ const OneDuck = () => {
         }
     }, [renderer, handleWindowResize])
 
-    return <OneDuckContainer ref={refContainer}>{loading && <OneDuckSpinner />}</OneDuckContainer>
-}
-
-export default OneDuck
+    return <OneDuckContainer forwardedRef={refContainer} />
+})

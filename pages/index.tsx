@@ -10,7 +10,6 @@ import {
     List,
     ListItem,
     useColorModeValue,
-    chakra,
     HStack,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -22,10 +21,6 @@ import SectionDiv from '@/components/SectionDiv'
 import { BioSection, BioYear } from '@/components/Biography'
 import styled from '@emotion/styled'
 import WorkImage from '@/components/works/WorkImage'
-
-const ProfileImage = chakra(Image, {
-    shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
-})
 
 const Paragraph = styled.p`
     text-align: justify;
@@ -64,12 +59,11 @@ const Home: NextPage = () => {
                             borderRadius="full"
                             overflow="hidden"
                         >
-                            <ProfileImage
+                            <Image
                                 src="/images/oneduck.webp"
                                 alt="profile image"
-                                borderRadius="full"
-                                width="100%"
-                                height="100%"
+                                width={100}
+                                height={100}
                             />
                         </Box>
                     </Box>
@@ -81,7 +75,7 @@ const Home: NextPage = () => {
                     </Heading>
                     <Paragraph>
                         I am a full-stack developer. I have experience with all stages of the
-                        development cycle for dynamic web projects with small and medium-sized
+                        development cycle for dynamic web projects with small, medium and big-sized
                         companies. I always try to find cutting-edge technologies and challenge
                         myself to implement an application that utilizes those technologies.
                     </Paragraph>
@@ -108,12 +102,12 @@ const Home: NextPage = () => {
                         Worked at Vietnam
                     </BioSection>
                     <BioSection>
-                        <BioYear>2019 to present</BioYear>
+                        <BioYear>2020 to present</BioYear>
                         Worked at Japan
                     </BioSection>
                     <BioSection>
                         <BioYear>2022 to present</BioYear>
-                        Working at Rakuten
+                        Worked at Rakuten
                     </BioSection>
                 </SectionDiv>
 
@@ -199,15 +193,17 @@ const Home: NextPage = () => {
                             <Box>
                                 <Image
                                     src="/images/certificates/hacker_rank_react.webp"
-                                    width="150px"
-                                    height="150px"
+                                    width={150}
+                                    height={150}
+                                    alt="hacker rank react"
                                 />
                             </Box>
                             <Box>
                                 <Image
                                     src="/images/certificates/binary_search_1.png"
-                                    width="180px"
-                                    height="150px"
+                                    width={150}
+                                    height={150}
+                                    alt="binary search 1"
                                 />
                             </Box>
                         </HStack>

@@ -5,17 +5,22 @@ import dynamic from 'next/dynamic'
 import { Box, Container } from '@chakra-ui/react'
 import NavBar from '@/layouts/NavBar'
 import Footer from '@/layouts/Footer'
-import OneDuckLoader from '@/components/OneDuckLoader'
+import { OneDuckLoader } from '@/components/OneDuckLoader'
+import { OneDuck } from '@/components/OneDuck'
 import { Analytics } from '@vercel/analytics/react'
+
 interface MainLayoutProps {
     children: JSX.Element[] | JSX.Element
     router: Router
 }
 
-const LazyOneDuck = dynamic(() => import('@/components/OneDuck'), {
-    ssr: false,
-    loading: () => <OneDuckLoader />,
-})
+export const LazyOneDuck = dynamic(
+    () => import('@/components/OneDuck').then((mod) => mod.OneDuck),
+    {
+        ssr: false,
+        loading: () => <OneDuckLoader />,
+    }
+) as typeof OneDuck
 
 export default function MainLayout({ children, router }: MainLayoutProps) {
     return (
